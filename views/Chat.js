@@ -11,11 +11,11 @@ export default class Chat extends Component {
            <Icon onPress={() => this.props.navigation.openDrawer()} name="md-menu" style={{ color: 'white', marginRight: 15 }} />
           </Left>
           <Right>
-           <Icon name="md-cart" style={{ color: 'white' }} />
+           <Icon onPress={this.props.screenProps.logout} name="md-cart" style={{ color: 'white' }} />
           </Right>
         </Header>
        <View style={{ marginTop:100,marginLeft:100}}>
-         <Text>CHAT CHAT CHAT</Text>
+          <Text>CHAT CHAT CHAT </Text>
         </View>
        </Container>
      );

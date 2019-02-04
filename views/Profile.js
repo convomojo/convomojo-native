@@ -9,10 +9,10 @@ export default class Profile extends Component {
       <Container>
         <Header>
           <Left style={{ flexDirection: 'row'}}>
-           <Icon onPress={() => this.props.navigation.openDrawer()} name="md-menu" style={{ color: 'white', marginRight: 15 }} />
+           <Icon onPress={() => this.props.navigation.openDrawer()} name="md-menu" style={{ marginRight: 15 }} />
           </Left>
-          <Right>
-           <Icon name="md-cart" style={{ color: 'white' }} />
+          <Right onPress={this.props.logout}>
+           <Icon name="md-cart" />
           </Right>
         </Header>
         <View style={{ marginTop:100,marginLeft:100}}>
